@@ -52,6 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// IF Baiano custom colors
+				'if-green': {
+					light: 'hsl(var(--if-green-light))',
+					DEFAULT: 'hsl(var(--if-green))',
+					dark: 'hsl(var(--if-green-dark))'
+				},
+				'if-red': 'hsl(var(--if-red))',
+				'if-blue': 'hsl(var(--if-blue))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
