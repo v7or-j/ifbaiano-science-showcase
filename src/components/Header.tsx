@@ -4,86 +4,71 @@ import { Input } from "@/components/ui/input";
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-sm border-b border-border">
-      {/* Top Banner */}
-      <div className="bg-gradient-to-r from-if-green to-if-green-light py-2">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-end gap-4 text-sm text-white">
-            <span>PORTUGUÊS</span>
-            <span>ENGLISH</span>
-            <span>ESPAÑOL</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Header */}
-      <div className="container mx-auto px-4 py-6">
-        <div className="flex items-center justify-between">
-          {/* Logo and Title */}
-          <div className="flex items-center gap-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-if-green to-if-green-dark rounded-lg flex items-center justify-center">
+    <header className="bg-white shadow-sm">
+      {/* Logo and Institution Name */}
+      <div className="bg-gray-100 border-b">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center space-x-4">
+            {/* IF Baiano Logo */}
+            <div className="flex items-center space-x-3">
               <div className="grid grid-cols-3 gap-1">
-                <div className="w-2 h-2 bg-white rounded-sm"></div>
                 <div className="w-2 h-2 bg-if-red rounded-sm"></div>
-                <div className="w-2 h-2 bg-white rounded-sm"></div>
-                <div className="w-2 h-2 bg-if-green-light rounded-sm"></div>
-                <div className="w-2 h-2 bg-white rounded-sm"></div>
-                <div className="w-2 h-2 bg-if-green-light rounded-sm"></div>
-                <div className="w-2 h-2 bg-white rounded-sm"></div>
-                <div className="w-2 h-2 bg-if-green-light rounded-sm"></div>
-                <div className="w-2 h-2 bg-white rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+                <div className="w-2 h-2 bg-if-green rounded-sm"></div>
+              </div>
+              <div>
+                <h2 className="text-lg font-bold text-gray-800">INSTITUTO FEDERAL</h2>
+                <p className="text-sm text-gray-700 -mt-1">Baiano</p>
               </div>
             </div>
-            <div>
-              <h1 className="text-2xl font-bold text-if-green">
-                Revista Científica IF Baiano
-              </h1>
-              <p className="text-lg text-if-green-dark">
-                Pesquisa, Inovação e Desenvolvimento Rural
-              </p>
-            </div>
-          </div>
-
-          {/* Search */}
-          <div className="relative w-80">
-            <Input
-              placeholder="Buscar artigos, autores, temas..."
-              className="pr-10"
-            />
-            <Button
-              size="sm"
-              variant="ghost"
-              className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 w-8 p-0"
-            >
-              <Search className="h-4 w-4" />
-            </Button>
           </div>
         </div>
       </div>
 
       {/* Navigation */}
-      <nav className="bg-if-green text-white">
-        <div className="container mx-auto px-4">
-          <div className="flex space-x-8">
-            <a href="#" className="py-4 px-2 border-b-2 border-transparent hover:border-white transition-colors">
-              INÍCIO
+      <nav className="bg-if-green text-white shadow-md">
+        <div className="container mx-auto px-6">
+          <div className="flex space-x-0">
+            <a
+              href="#"
+              className="py-4 px-6 hover:bg-if-green-dark transition-colors font-medium border-r border-if-green-dark"
+            >
+              HOME
             </a>
-            <a href="#" className="py-4 px-2 border-b-2 border-transparent hover:border-white transition-colors">
-              SOBRE A REVISTA
-            </a>
-            <a href="#" className="py-4 px-2 border-b-2 border-transparent hover:border-white transition-colors">
+            <a
+              href="#"
+              className="py-4 px-6 hover:bg-if-green-dark transition-colors border-r border-if-green-dark"
+            >
               CORPO EDITORIAL
             </a>
-            <a href="#" className="py-4 px-2 border-b-2 border-transparent hover:border-white transition-colors">
-              INSTRUÇÕES E POLÍTICAS
+            <a
+              href="#"
+              className="py-4 px-6 hover:bg-if-green-dark transition-colors border-r border-if-green-dark"
+            >
+              INSTRUÇÃO E POLÍTICA
             </a>
-            <a href="#" className="py-4 px-2 border-b-2 border-transparent hover:border-white transition-colors">
+            <a
+              href="#"
+              className="py-4 px-6 hover:bg-if-green-dark transition-colors border-r border-if-green-dark"
+            >
               EDIÇÃO ATUAL
             </a>
-            <a href="#" className="py-4 px-2 border-b-2 border-transparent hover:border-white transition-colors">
-              ARQUIVO
+            <a
+              href="#"
+              className="py-4 px-6 hover:bg-if-green-dark transition-colors border-r border-if-green-dark"
+            >
+              ACERVO
             </a>
-            <a href="#" className="py-4 px-2 border-b-2 border-transparent hover:border-white transition-colors">
+            <a
+              href="#"
+              className="py-4 px-6 hover:bg-if-green-dark transition-colors"
+            >
               CONTATO
             </a>
           </div>
